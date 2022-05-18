@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Poke Project</title>
+  </head>
+  <body>
+    <section class="container">
+      <nav class="nav">
+        <div class="search-container">
+          <label for="search">
+            <input type="text" autocomplete="off" id="search" placeholder="Search Pokemon..." class="search-input" />
+            <i class="fas fa-search"></i>
+          </label>
+          <ul class="pokemon-filter-nav styled-ul">
+            <li data-filter="all" class="filter-link active">All Pokemons</li>
+            <li data-filter="fav" class="filter-link">Favorite Pokemons</li>
+            <li>
+              <select name="alhpa" id="order">
+                <option disabled selected value="">--Select an Option --</option>
+                <option value="a">A-Z</option>
+                <option value="z">Z-A</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="types"></div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="pokemon-grid"></div>
+        <div class="fav-grid hidden"></div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
